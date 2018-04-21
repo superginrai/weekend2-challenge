@@ -27,5 +27,20 @@ function newAdd (){
     })
     .then(function(response){
         console.log(response);
+        logAllProblems();
+    });
+}
+
+function logAllProblems (){
+    $.ajax({
+        type: 'GET', 
+        url: '/all-problems'
+    })
+    .then(function(response) {
+        $('#allProblems').empty();
+        response.forEach(function(element){
+        $('#allProblems').append(
+            '<li>' + element.x + element.type + element.y + element.ans+ '<li>')
+        });
     });
 }
