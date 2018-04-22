@@ -110,7 +110,7 @@ function logAllProblems (){
     .then(function(response) {
         $('#allProblems').empty();
         $('#history').empty();
-        $('#history').append('History:')
+        $('#history').append('Body-Count History:')
         response.forEach(function(element){
         $('#allProblems').append(
             '<li>' + element.x + ' ' + element.type + ' ' + element.y + ' = ' + element.ans + '</li>')
