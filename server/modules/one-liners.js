@@ -3,7 +3,7 @@ module.exports = [
     { quote: 'Git to the servah!' },
     { quote: 'Come with me if you want to code!'},
     { quote: 'Hasta la vista, AJAX.'},
-    { quote: 'Don\'t push it or I\'ll give you a git-request you won\'t believe.'},
+    { quote: 'Don\'t push it or I\'ll give you a get-request you won\'t believe.'},
     { quote: 'To survive the code, you\'ve gotta become code.'},
     { quote: 'DOM! You Gonna turn your back on Family?' },
     { quote: 'Git off my plane!' },
