@@ -10,6 +10,19 @@ function onReady() {
     $('#sub').on('click', newSub);
     $('#multiply').on('click', newMulti);
     $('#divide').on('click', newDivide);
+    $('#reset').on('click', reset);
+    $('#newOneLiner').on('click', newOneLiner);
+}
+
+function newOneLiner() {
+    $.ajax({
+        type: 'GET',
+        url: '/quote'
+    })
+        .then(function (response) {
+            $('#oneLiner').text('"' + response.quote + '"');
+            console.log(response);
+        });
 }
 
 //takes input "add" numbers from the DOM and sends them to the server to be added.
@@ -103,4 +116,11 @@ function logAllProblems (){
             '<li>' + element.x + ' ' + element.type + ' ' + element.y + ' = ' + element.ans + '</li>')
         });
     });
+}
+
+function reset (){
+        $('#allProblems').empty();
+        $('#history').empty();
+        $('#numOne').val('');
+        $('#numTwo').val('');
 }

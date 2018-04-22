@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const app = express();
 const PORT = 5000;
 
-const addNumbers = require('./modules/add-numbers')
+const one_liners = require('./modules/one-liners')
 const history = require('./modules/history')
 
 app.use(express.static('server/public'));
@@ -11,6 +11,11 @@ app.use(bodyParser.urlencoded({ extended: true }));//need to post!
 
 app.get('/all-problems', (req, res) => {
     res.send(history);
+});
+
+app.get('/quote', (req, res) => {
+    const randomNumber = Math.floor(Math.random() * 16);
+    res.send(one_liners[randomNumber]);
 });
 
 //push received numbers for adding to module
@@ -80,10 +85,10 @@ app.post('/divide-numbers', (req, res) => {
     res.sendStatus(200);
 });
 
-//function returnAdd (){
- //   (addNumbers[0].x + addNumbers[0].y) = addedNums;
-//console.log(addedNums);
-//};
+//app.get('/reset', (req, res) => {
+  //  history.clear();
+   // res.send(history);
+//});
 
 app.listen(PORT, () => {
     console.log(`up and running on port ${PORT}`);

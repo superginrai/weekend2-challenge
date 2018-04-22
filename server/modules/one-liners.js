@@ -1,0 +1,18 @@
+module.exports = [
+    { quote: 'Yippee-Ki-Yay motherserver.' },
+    { quote: 'Git to the servah!' },
+    { quote: 'Come with me if you want to code!'},
+    { quote: 'Hasta la vista, AJAX.'},
+    { quote: 'Don\'t push it or I\'ll give you a git-request you won\'t believe.'},
+    { quote: 'To survive the code, you\'ve gotta become code.'},
+    { quote: 'DOM! You Gonna turn your back on Family?' },
+    { quote: 'Git off my plane!' },
+    { quote: 'I\'m gttin\' too old for this script' },
+    { quote: 'I know what you\'re thinking...did he make six get requests or only five? Well to tell you the truth in all this coding I kinda lost track myself. So you gotta ask yourself just one question: "Do I feel lucky?" Well, do ya, punk?'  },
+    { quote: 'I ain\'t got time to code'},
+    { quote: 'What I do have are a very particular set of scripts...'},
+    { quote: 'I love the smell of JavaScript in the morning. It smells like...victory.' },
+    { quote: 'Remembah when I promised I\'d git you last? I lied.'},
+    { quote: 'I\'ve come here to chew bubble gum and push arrays...and I\'m all out of bubblegum.' },
+    { quote: 'Go ahead, post that request.' },
+];
